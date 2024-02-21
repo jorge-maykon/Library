@@ -34,10 +34,13 @@
         type="text/css" />
 
 </head>
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+
+<!--BARRA DE NAVEGAÇÃO-->
+
+<nav class="navbar bg-dark" data-bs-theme="dark" style="border-radius: 55px;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="../static/imagens/logolivro.png" alt="Logo" width="30" height="24"
+        <a class="navbar-brand" href="index.html">
+            <img src="../static/imagens/logo/logolivro.png" alt="Logo" width="30" height="24"
                 class="d-inline-block align-text-top">
             Library
         </a>
@@ -47,7 +50,7 @@
                     <a class="nav-link" aria-current="page" href="content/cadastrar-livro.html">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="content/listar-livros.html">List</a>
+                    <a class="nav-link" href="../templates/content/listar-livros.html">List</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="content/excluir-livro.html">Delete</a>
@@ -57,12 +60,15 @@
     </div>
 </nav>
 
-<body>
+<!--INICIO DO CORPO-->
+
+<body class="body-img">
     <div class="row masthead text-black text-center">
         <section class="">
             <div class="container">
                 <h2 class="page-section-heading text-uppercase mb-0">Library</h2>
 
+<!--TRAÇO E ESTRELA -->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
@@ -71,114 +77,81 @@
                     <div class="divider-custom-line"></div>
                 </div>
 
+<!--CARD NO MEIO DO CORPO-->
                 <div class=" card text-center ">
                     <div class="card-header">
                         Emphasis
                     </div>
                     <div>
-                        <!-- <div class="row row-cols-1 row-cols-md-3 g-4 col-11 mx-auto">
-                            <div class="col">
-                                <div class="card h-100">
+
+<!--CARDS DO DESTAQUE-->
+                        <div class="row g-0 text-start angled-gradient" style="padding-left: 220px ;">
+                            <div class=" col-3 g-0">
+                                <div class="card" style="width: 18rem;">
                                     <img src="https://livrosnsmoraes.com/wp-content/uploads/001-Capa-de-livro-pre-pronta-01-Fantasia-Aventura-Ficcao-por-NSMoraes.jpg"
                                         class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
+                                        <h5 class="card-title">Nome livro</h5>
+                                        <p class="card-text">Informações:</p>
                                     </div>
-                                    <div class="card-footer">
-                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Autor</li>
+                                        <li class="list-group-item">Editora</li>
+                                        <li class="list-group-item">Titulo</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Ver mais</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card h-100">
+
+                            <div class=" col-3 g-0">
+                                <div class="card" style="width: 18rem;">
                                     <img src="https://livrosnsmoraes.com/wp-content/uploads/001-Capa-de-livro-pre-pronta-01-Fantasia-Aventura-Ficcao-por-NSMoraes.jpg"
                                         class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This card has supporting text below as a natural
-                                            lead-in to additional content.</p>
+                                        <h5 class="card-title">Nome livro</h5>
+                                        <p class="card-text">Informações:</p>
                                     </div>
-                                    <div class="card-footer">
-                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Autor</li>
+                                        <li class="list-group-item">Editora</li>
+                                        <li class="list-group-item">Titulo</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Ver mais</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card h-100">
+
+                            <div class="col-3 g-0">
+                                <div class="card" style="width: 18rem;">
                                     <img src="https://livrosnsmoraes.com/wp-content/uploads/001-Capa-de-livro-pre-pronta-01-Fantasia-Aventura-Ficcao-por-NSMoraes.jpg"
                                         class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This card has even longer content
-                                            than the first to show that equal height action.</p>
+                                        <h5 class="card-title">Nome livro</h5>
+                                        <p class="card-text">Informações:</p>
                                     </div>
-                                    <div class="card-footer">
-                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Autor</li>
+                                        <li class="list-group-item">Editora</li>
+                                        <li class="list-group-item">Titulo</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Ver mais</a>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-
-                    </div>
-                </div>
-
-                <div class="row col-11 g-0">
-                    <div class="card" style="width: 13rem;">
-                        <img src="https://livrosnsmoraes.com/wp-content/uploads/001-Capa-de-livro-pre-pronta-01-Fantasia-Aventura-Ficcao-por-NSMoraes.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://livrosnsmoraes.com/wp-content/uploads/001-Capa-de-livro-pre-pronta-01-Fantasia-Aventura-Ficcao-por-NSMoraes.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                        <div class="d-grid gap-2 col-6 mx-auto" style="padding: 5px 0px 5px 0px">
+                            <a href="content/listar-livros.html"><button class="btn btn-primary" type="button">List our
+                                    books</button></a>
                         </div>
                     </div>
                 </div>
 
-
-
-                <div class="d-grid gap-2 col-6 mx-auto" style="padding-bottom: 20px">
-                    <a href="content/listar-livros.html"><button class="btn btn-primary" type="button">List our
-                            books</button></a>
-                </div>
-
-                <div class="card-footer text-body-secondary">
-                    2 days ago
-                </div>
-
-
-                <div class="row justify-content-center">
+                <!--<div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                         <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
@@ -193,12 +166,13 @@
                         </div>
 
                     </div>
-                </div>
+                </div>-->
             </div>
         </section>
     </div>
 
-    <footer class="footer text-center" style="height: 30px;">
+<!--RODAPÉ-->
+    <footer class="footer text-center" style="height: 3px;">
         <div class="container">
             <div class="row">
                 <!-- Footer Location-->
@@ -229,6 +203,7 @@
             </div>
         </div>
     </footer>
+
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
         <div class="container">
