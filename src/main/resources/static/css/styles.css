@@ -102,6 +102,8 @@
 .body-img{
 background-image: url(../imagens/plano_fundo/01.jpg);
 background-repeat: no-repeat;
+background-size: cover;
+background-position: 0px 110px ;
 padding: 7px 0px 0px 0px;
 }
 
@@ -125,7 +127,7 @@ body{
 }
 
 
-hr {
+hr{
   margin: 1rem 0;
   color: inherit;
   border: 0;
@@ -141,7 +143,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
-h1, .h1 {
+h1, .h1{
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
