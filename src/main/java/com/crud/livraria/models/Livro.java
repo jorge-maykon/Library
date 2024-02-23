@@ -2,6 +2,8 @@ package com.crud.livraria.models;
 
 import java.io.Serializable;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,7 +23,6 @@ public class Livro implements Serializable {
 	private String autorSobrenome;
 	private String isbn;
 	private String editora;
-	
 	private int edicao;
 	private int numeroPaginas;
 
@@ -92,5 +93,10 @@ public class Livro implements Serializable {
 	public void setNumeroPaginas(int numeroPaginas) {
 		this.numeroPaginas = numeroPaginas;
 	}
+
+    public void salvarFoto(MultipartFile foto) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'salvarFoto'");
+    }
 
 }
