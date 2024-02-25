@@ -13,6 +13,14 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.crud.livraria.models.Livro;
 import com.crud.livraria.repository.LivrariaRepository;
 
+// biblioteca para o registro de imagem
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+
+// Inicio da controladora
+
 @Controller
 public class LivrariaController {
 	
@@ -90,5 +98,15 @@ public class LivrariaController {
 		return "redirect:/listarLivros";
 		
 	}
+
+	@PostMapping("/upload")
+     public String handleFileUpload(@RequestParam("file") MultipartFile file) {
+         // lógica para processar o arquivo
+         return "redirect:/index";
+     }
 	
 }
+
+
+
+

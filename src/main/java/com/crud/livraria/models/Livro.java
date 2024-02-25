@@ -25,6 +25,7 @@ public class Livro implements Serializable {
 	private String editora;
 	private int edicao;
 	private int numeroPaginas;
+	private String imgPath;
 
 	public Livro() {
 		// TODO Auto-generated constructor stub
@@ -99,4 +100,11 @@ public class Livro implements Serializable {
         throw new UnsupportedOperationException("Unimplemented method 'salvarFoto'");
     }
 
+	public String getImgPath() {
+		return titulo;
+	}
+
+	public void setImgPath(String titulo) {
+		this.titulo = titulo;
+	}
 }
