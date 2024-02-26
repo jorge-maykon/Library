@@ -105,6 +105,7 @@ public class Livro implements Serializable {
 	}
 
 	public void setImgPath(String titulo) {
+			
 		this.titulo = titulo;
 	}
 }
