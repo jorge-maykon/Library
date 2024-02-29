@@ -98,15 +98,9 @@ public class LivrariaController {
 		return "redirect:/listarLivros";
 		
 	}
-
 	@PostMapping("/upload")
      public String handleFileUpload(@RequestParam("file") MultipartFile file) {
          // lógica para processar o arquivo
          return "redirect:/index";
      }
-	
 }
-
-
-
-
