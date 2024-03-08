@@ -1,6 +1,7 @@
 package com.crud.livraria.models;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 import org.springframework.web.multipart.MultipartFile;
 
@@ -16,7 +17,7 @@ public class Livro implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long codigoLivro;
+	private UUID codigoLivro;
 	
 	private String titulo;
 	private String autorNome;
@@ -31,7 +32,7 @@ public class Livro implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public long getCodigoLivro() {
+	public UUID getCodigoLivro() {
 		return codigoLivro;
 	}
 
