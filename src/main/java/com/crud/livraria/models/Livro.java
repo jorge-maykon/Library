@@ -36,7 +36,7 @@ public class Livro implements Serializable {
 		return codigoLivro;
 	}
 
-	public void setCodigoLivro(long codigoLivro) {
+	public void setCodigoLivro(UUID codigoLivro) {
 		this.codigoLivro = codigoLivro;
 	}
 
