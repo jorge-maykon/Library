@@ -18,7 +18,6 @@ public class Livro implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private UUID codigoLivro;
-	
 	private String titulo;
 	private String autorNome;
 	private String autorSobrenome;
@@ -35,7 +34,6 @@ public class Livro implements Serializable {
 	public UUID getCodigoLivro() {
 		return codigoLivro;
 	}
-
 	public void setCodigoLivro(UUID codigoLivro) {
 		this.codigoLivro = codigoLivro;
 	}
